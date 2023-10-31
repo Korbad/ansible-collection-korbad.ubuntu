@@ -1,0 +1,16 @@
+- name: Ensure setuptools is installed
+  apt:
+    name: python3-setuptools
+    install_recommends: yes
+    force_apt_get: yes
+    state: absent
+  become: true
+
+#- command:
+#    cmd: pip install -U pip setuptools
+#
+#- name: Updates setuptools
+#  pip:
+#    name: setuptools
+#    state: latest
+#    extra_args: --user
