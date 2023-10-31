@@ -1,0 +1,5 @@
+- name: Install libssl-dev package
+  ansible.builtin.apt:
+    name: libssl-dev
+    state: present
+  become: true
