@@ -1,0 +1,5 @@
+- name: Install build-essential package
+  ansible.builtin.apt:
+    name: build-essential
+    state: present
+  become: true
